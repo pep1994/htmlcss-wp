@@ -30,6 +30,15 @@ main::after {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(104, 154, 37);
+  font-size: 1.6rem;
+}
+
+hr {
+  color: #999999;
+}
 
 /* header */
 header {
@@ -77,9 +86,9 @@ nav {
 
 nav li {
   display: inline-block;
-  padding: 12px;
-  border-right: solid 1px rgba(0, 0, 0, .4);
   font-size: 1.4rem;
+  border-right: solid 1px rgba(0, 0, 0, .4);
+  box-shadow:
 }
 
 nav li:last-child {
@@ -87,25 +96,30 @@ nav li:last-child {
 }
 
 nav a {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 12px;
   color: rgba(255, 255, 255, .7);
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
 }
 
 
 /* aside di sinistra */
 #left {
-  /* debug */
-  height: 600px;
-  border: solid 1px black;
-  /* end debug */
-  width: 25%;
+  width: 20%;
   float: left;
 }
 
 .l-item {
   padding: 20px;
   background-color: white;
+  margin-bottom: 20px;
+  border-radius: 3px;
 }
 
 .l-item ul {
@@ -117,11 +131,6 @@ nav a {
 }
 
 
-.l-item li a {
-  color: rgb(104, 154, 37);
-  text-decoration: none;
-  font-size: 1.7rem;
-}
 
 .l-item li:hover {
   background-color: rgba(0, 0, 0, 0.05);
@@ -141,30 +150,76 @@ nav a {
   margin-bottom: 15px;
 }
 
-
-
-
-
-
 /* sezione centrale */
 #main-content {
-  /* debug */
-  background-color: darkred;
-  border: solid 1px black;
-  height: 800px;
-  /* end debug */
-  width: 38%;
+
+  background-color: white;
+  width: 50%;
   float: left;
   margin: 0 2%;
 }
 
-.s-item {
-  /* debug */
-  border: solid 1px black;
-  height: 25%;
-  /* end debug */
+
+#main-content h2, #main-content p {
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
+.subtitle {
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.subtitle, .date {
+  margin-left: 20px;
+}
+
+.subtitle h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 42px;
+}
+
+.date {
+  margin-bottom: 25px;
+}
+
+.date p, #category , #tags {
+  color: #999999;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+
+.picture img{
+  width: 100%;
+}
+
+.caption{
+  padding: 20px;
+}
+
+.caption p {
+  color: #666666;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+}
+
+#category, #tags {
+  display: inline-block;
+}
+
+.tags {
+  margin: 10px 20px 35px;
+  padding: 10px;
+  background-color: rgba(193, 193, 193, .1);
+}
+
+.s-item {
+  border-bottom: solid 1px rgba(193, 193, 193, .1);
+
+}
 
 /* aside di destra */
 #right {
@@ -173,7 +228,7 @@ nav a {
   border: solid 1px black;
   background-color: lightblue;
   /* end debug */
-  width: 33%;
+  width: 26%;
   float: left;
 }
 
