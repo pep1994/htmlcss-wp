@@ -14,7 +14,6 @@ body {
   background-image: url(../img/sfondo.png);
 }
 
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,9 +35,6 @@ a {
   font-size: 1.6rem;
 }
 
-hr {
-  color: #999999;
-}
 
 /* header */
 header {
@@ -62,7 +58,6 @@ header {
   transform: translate(-50%, -50%);
 }
 
-
 header h1, header h2 {
   color: white;
   text-transform: uppercase;
@@ -76,8 +71,6 @@ header h2 {
   font-size: 2rem;
   font-weight: normal;
 }
-
-
 
 nav {
   text-align: center;
@@ -130,8 +123,6 @@ nav a:hover {
   padding: 6px 10px;
 }
 
-
-
 .l-item li:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
@@ -143,12 +134,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
 .l-item h3 {
   font-size: 1.9rem;
   font-weight: normal;
   margin-bottom: 15px;
 }
+
 
 /* sezione centrale */
 #main-content {
@@ -157,6 +148,7 @@ nav a:hover {
   width: 50%;
   float: left;
   margin: 0 2%;
+  border-radius: 5px;
 }
 
 
@@ -223,22 +215,63 @@ nav a:hover {
 
 /* aside di destra */
 #right {
-  /* debug */
-  height: 300px;
-  border: solid 1px black;
-  background-color: lightblue;
-  /* end debug */
+
   width: 26%;
   float: left;
 }
 
 .r-item {
-  /* debug */
-  border: solid 1px black;
-  height: 50%;
-  /* end debug */
+  background-color: white;
+  border-radius: 5px;
 }
 
+.r-item:nth-child(2) {
+  margin-top: 20px;
+}
+
+.r-item form {
+  padding: 20px;
+}
+
+input[type="search"] {
+  width: 65%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+button[type="button"] {
+  width: 28%;
+  font-size: 1.5rem;
+  margin-left: 8px;
+  background-color: rgb(112, 103, 97);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.r-item h3 {
+  font-size: 1.9rem;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.r-item p {
+  margin: 20px 15px;
+  line-height: 2rem;
+  padding-bottom: 15px;
+}
+.r-item p a {
+  font-size: 1rem;
+}
+
+.r-item .big {
+  font-size: 2.2rem;
+}
 
 /* footer */
 footer {
